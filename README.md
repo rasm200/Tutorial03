@@ -43,4 +43,46 @@ Formato bold o strong
 - Formato html <a href="http://www.google.com">ir a google</a>
 
 # Imágenes
-- ![Logo github](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png)
+![Logo github](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png)
+
+# Agregar Code Snippets
+
+Código JSON
+``` JSON
+[
+  {
+    "title": "apples",
+    "count": [12000, 20000],
+    "description": {"text": "...", "sensitive": false}
+  },
+  {
+    "title": "oranges",
+    "count": [17500, null],
+    "description": {"text": "...", "sensitive": false}
+  }
+]
+```
+Código Javascript
+```Javascript
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+export  $initHighlight;
+```
